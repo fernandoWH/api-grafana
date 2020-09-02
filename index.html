@@ -32,35 +32,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-    <!-- <script language="javaScript">
-         jQuery(document).ready(function() {
-         $.ajax({
-             type: "GET",
-             url: "http://3.131.109.207/grafana/d/CugGJuNGz/server-status-fcetina?orgId=22&kiosk=tv&theme=light",
-             Accept: "application/json",
-             xhrFields: {
-                 withCredentials: false
-             },
-             //headers: {
-             //    "Authorization": "Bearer eyJrIjoiMTk0Z1RlN3FkcHQ1M2RVSXZTVk5zVzJTR0NuT2RRak8iLCJuIjoia2V5dmlld2VyZmNldGluYSIsImlkIjoyMn0="
-             //},
-            beforeSend: function(xhr){
-            xhr.setRequestHeader('Authorization', 'Bearer eyJrIjoiMTk0Z1RlN3FkcHQ1M2RVSXZTVk5zVzJTR0NuT2RRak8iLCJuIjoia2V5dmlld2VyZmNldGluYSIsImlkIjoyMn0=');
-            },
-             success: function(data){
-                var iframeDoc = $("#monitoringframe").get(0).contentDocument;
-                iframeDoc.open();
-                iframeDoc.write(data);
-                iframeDoc.close();
-                       //$('#monitoringframe').attr('src', 'http://3.131.109.207/grafana/d/CugGJuNGz/server-status-fcetina?orgId=22&kiosk=tv&theme=light');
-                        //$('#monitoringframe').html(data);
-             },
-             error : function(err) {
-                 console.log('Error!', err)
-             }
-         });
-          });
-     </script> -->
      <script type="text/javascript">
    jQuery(document).ready(function() {
  $.ajax({
@@ -68,7 +39,7 @@
      url: "http://3.131.116.96/grafana/d/jiD-YODGz/server?orgId=1&kiosk=tv&theme=light",
      Accept: "application/json",
      xhrFields: {
-         withCredentials: false
+         withCredentials: true
       },
      headers: {
          "Authorization": "Bearer eyJrIjoiRnZHZlZJWk9MeGo4UmIxMlYwYWRMb3ZTSmFpa09UV1kiLCJuIjoidmlld2VyIiwiaWQiOjF9"
